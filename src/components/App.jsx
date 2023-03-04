@@ -1,6 +1,8 @@
-import userEvent from "@testing-library/user-event";
+//import userEvent from "@testing-library/user-event";
 import { Profile } from "./Profile/profile";
-import user from "./Profile/user"
+import { Statistic } from "./Statistic/statistic";
+import user from "./Data/user"
+import stats from "./Data/data"
 
 
 export const App = () => {
@@ -21,6 +23,11 @@ export const App = () => {
         location={user.location}
         avatar={user.avatar}
         stats={user.stats} />
+      <Statistic
+        statistic={stats}
+        
+      />
+      
     </div>
   );
 };
