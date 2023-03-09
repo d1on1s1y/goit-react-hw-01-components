@@ -1,6 +1,6 @@
 import userEvent from "@testing-library/user-event";
 import { Profile } from "./Profile/profile";
-import user from "./Profile/user"
+import user from "./Profile/UserData/user"
 
 
 export const App = () => {
